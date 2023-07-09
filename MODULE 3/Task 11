@@ -1,9 +1,0 @@
-//const myArray = ['Monday', 'Tueday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
-//const numArray = [70, 50, 60]
-//const emptyArray = []
-//console.log(myArray)
-//console.log(numArray.length)
-//console.log(emptyArray)
-
-const myFriends = ['Jessica', 'Moses', 'Angela', 'Emma', 'Sarah'] 
-console.log(myFriends)
