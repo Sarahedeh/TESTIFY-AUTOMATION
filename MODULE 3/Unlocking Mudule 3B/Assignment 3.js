@@ -1,4 +1,4 @@
-//Print all even number from 0 to 100
+//Code for printing all the even number from 0 to 100
 
 
 function printEvenNumbers() { 

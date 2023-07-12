@@ -1,4 +1,4 @@
-//Create a lenght converter function
+//Code for creating a lenght converter function
 
 function converter(millimeter){
     const centimeter = millimeter * 50000;
