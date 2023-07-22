@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "c2ec89f3-e134-4ed2-90b7-4904b9b6102d",
+		"name": "TASK3",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26117535"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"confirm that id number of a non-fiction book with the name 'Untamed'\", function(){",
+							"     var books= pm.response.json();",
+							"var booksavailaable =true;",
+							"",
+							"",
+							"for(let i = 0; i<books.lenght;i++){",
+							"    var book=books[i]",
+							"",
+							"    if(book.name===\"Untamed\" && book.type===\"non-fiction\"){",
+							"        pm.expect(book.id).to.be.a(\"number\")",
+							"        booksavailaable=true",
+							"        console.log(book.id)",
+							"    }",
+							"}",
+							"",
+							" }); ",
+							"",
+							"",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/books",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
+
+
